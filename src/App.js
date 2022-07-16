@@ -1,9 +1,16 @@
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+import { About, Footer, Header, Skills, Testimonial, Work } from './containers';
+import { Navbar } from './components';
+
+const App = () => (
+  <div className="app">
+    <Navbar />
+    <Header />
+    <About />
+    <Work />
+    <Skills />
+    <Testimonial />
+    <Footer />
+  </div>
+);
 
 export default App;
