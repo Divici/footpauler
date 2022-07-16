@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .app__flex {
+      @apply flex justify-center items-center
+    }
+
+    .app__wrapper {
+        @apply flex-1 w-full flex-col pt-16 px-4 pb-8 sm: py-16 px-8
+    }
+    
+    .p-text {
+        @apply text-[0.8rem] text-left text-gray leading-[1.5] lg:text-3xl
+    }
+}
