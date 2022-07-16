@@ -9,7 +9,7 @@
     }
 
     .app__wrapper {
-        @apply flex-1 w-full flex-col pt-16 px-4 pb-8 sm: py-16 px-8
+        @apply flex-1 w-full flex-col pt-16 px-4 pb-8 sm:py-16 px-8
     }
     
     .p-text {
