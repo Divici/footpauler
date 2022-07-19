@@ -15,7 +15,7 @@ const scaleVariants = {
 };
 
 const Header = () => (
-  <div className="flex-1 w-full h-full flex-col lg:flex-row pt-24 px-4 pb-8 sm:pb-0 sm:px-8 app__flex">
+  <div className="flex-1 w-full h-full flex-col lg:flex-row pt-44 px-4 pb-8 sm:pb-0 sm:px-8 app__flex">
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.5 }}
@@ -30,9 +30,8 @@ const Header = () => (
           </div>
         </div>
 
-        <div className="py-4 px-8 bg-white rounded-2xl w-auto shadow-xl shadow-black/20 flex-col mt-12 app__flex">
-          <p className="p-text w-full uppercase text-right">A Soccer Coach</p>
-          <p className="p-text w-full uppercase text-right">& Trainer</p>
+        <div className="py-4 px-8 bg-white rounded-2xl w-auto shadow-xl shadow-black/20 mt-12 app__flex p-text">
+          <p className="w-full ml:text-lg lg:text-xl uppercase text-right">A Soccer Coach <br></br>& Trainer</p>
         </div>
       </div>
     </motion.div>
@@ -40,9 +39,9 @@ const Header = () => (
     <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 0.5, delayChildren: 0.5 }}
-      className="flex-1 h-full flex justify-end items-end relative lg:my-8 pt-2"
+      className="flex-1 h-full flex justify-end items-end relative lg:my-8 mt-8 mb-4"
     >
-      <img src={images.profile} alt="profile_bg" className='w-full object-contain z-[1]' />
+      <img src={images.profile} alt="profile_bg" className='w-full object-contain z-[1] shadow-[0_10px_5px_-5px_rgba(0,0,0,0.10)]' />
       <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}

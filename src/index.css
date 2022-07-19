@@ -17,10 +17,18 @@
     }
     
     .p-text {
-        @apply text-[0.8rem] text-left text-gray leading-[1.5] lg:text-3xl
+        @apply text-[0.8rem] sm:text-base md:text-lg ml:text-xl lg:text-2xl text-left text-gray leading-[1.5]
     }
 
     .head-text {
         @apply text-[2rem] sm:text-[2.75rem] font-extrabold text-center text-black capitalize
     }
+}
+
+.app__navbar {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: fixed;
+    z-index: 2;
 }
