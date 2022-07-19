@@ -11,6 +11,10 @@
     .app__wrapper {
         @apply flex-1 w-full flex-col pt-16 px-4 pb-8 sm:py-16 px-8
     }
+
+    .copyright {
+        @apply w-full pt-8 flex flex-col justify-end items-end
+    }
     
     .p-text {
         @apply text-[0.8rem] text-left text-gray leading-[1.5] lg:text-3xl
