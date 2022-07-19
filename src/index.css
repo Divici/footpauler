@@ -15,4 +15,8 @@
     .p-text {
         @apply text-[0.8rem] text-left text-gray leading-[1.5] lg:text-3xl
     }
+
+    .head-text {
+        @apply text-[2rem] sm:text-[2.75rem] font-extrabold text-center text-black capitalize
+    }
 }
