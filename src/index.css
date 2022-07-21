@@ -31,6 +31,10 @@
     .bold-text {
         @apply text-sm sm:text-base font-extrabold text-black text-left
     }
+
+    .socials-div {
+        @apply w-10 h-10 rounded-full bg-white my-1 border-[1px] border-lightGray flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-secondary hover:border-secondary cursor-pointer
+    }
 }
 
 .app__navbar {

@@ -1,27 +1,24 @@
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../wrapper';
-import abouts from '../constants/data';
+import { images } from '../constants';
 
 const About = () => {
   return (
     <div>
-      <h2 className="head-text">I Know that <span className='text-secondary'>Good Coaches</span> <br />make  <span className='text-secondary'>Passionate Players</span></h2>
-
-      <div className="flex justify-center items-start flex-wrap mt-8">
-        {abouts.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: 'tween' }}
-            className="w-48 md:w-56 ml:w-64 flex justify-start items-start flex-col m-8"
-            key={about.title + index}
-          >
-            <img src={about.imgUrl} alt={about.title} className='w-full h-44 md:h-52 ml:h-60 round-[15px] object-cover' />
-            <h2 className="bold-text mx-auto mt-5">{about.title}</h2>
-            <p className="p-text text-center text-base ml:text-lg mt-3">{about.description}</p>
-          </motion.div>
-        ))}
-      </div>
+      <motion.div
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, type: 'tween' }}
+        className="w-full h-full py-8 flex justify-center items-center flex-wrap lg:justify-between lg:flex-nowrap m-4 mx-auto bg-gradient-to-t ml:bg-gradient-to-l from-primary/20 via-primary to-white"
+      >
+        <div className='w-full lg:w-3/5'>
+          <h2 className="bold-text text-center mt-4 uppercase">About Me</h2>
+          <p className="p-text px-4 text-center text-base ml:text-lg mt-3">Semi-Pro Footballer & Licensed Coach Drills, skills, training, highlights, and everything football.</p>
+          <p className='p-text p-4 text-center text-black'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat.</p>
+        </div>
+        <div className=''>
+          <img src={images.aboutme} alt='me' className='h-96 ml:h-[450px] lg:h-1/2 object-contain' />
+        </div>
+      </motion.div>
     </div>
   );
 };

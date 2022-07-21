@@ -7,6 +7,7 @@ import profile from '../assets/profile.png';
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
+import aboutme from '../assets/aboutme.png';
 
 export default {
     logo,
@@ -18,4 +19,5 @@ export default {
     about01,
     about02,
     about03,
+    aboutme,
 };

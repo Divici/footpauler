@@ -14,7 +14,7 @@ const Navbar = () => {
       </div>
 
       <ul className="flex-1 hidden ml:flex justify-center items-center list-none">
-        {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+        {['home', 'about', 'work', 'contact'].map((item) => (
           <li className="app__flex p-text my-0 mx-4 cursor-pointer flex-col" key={`link-${item}`}>
             <div className='w-[5px] h-[5px] bg-transparent rounded-[50%] mb-[5px] hover:bg-secondary' />
             <a href={`#${item}`} className='text-gray no-underline flex-col uppercase font-medium transition-all duration-300 ease-in-out hover:text-secondary'>{item}</a>
@@ -33,7 +33,7 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} className='w-9 h-9 text-secondary my-2 mx-4 cursor-pointer' />
             <ul className='list-none m-0 p-0 h-full w-full flex ml:hidden justify-start items-start flex-col '>
-              {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+              {['home', 'about', 'work', 'contact'].map((item) => (
                 <li key={item} className='m-4' >
                   <a href={`#${item}`} onClick={() => setToggle(false)} className='text-gray no-underline text-base uppercase font-medium transition-all duration-300 ease-in-out hover:text-secondary' >
                     {item}

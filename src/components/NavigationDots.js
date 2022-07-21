@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
 const NavigationDots = ({ active }) => (
-  <div className="hidden ml:flex justify-center items-center flex-col p-4 fixed right-4 top-1/2">
+  <div className="hidden ml:flex justify-center items-center flex-col p-4">
     {
-      ['home', 'about', 'work', 'skills', 'testimonial', 'contact'].map((item, index) => (
+      ['home', 'about', 'work','contact'].map((item, index) => (
         <a
           href={`#${item}`}
           key={item + index}
