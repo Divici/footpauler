@@ -14,7 +14,7 @@ const About = () => {
           <h2 className="bold-text text-center mt-4 uppercase">About Me</h2>
           <p className="p-text px-4 text-center text-base ml:text-lg mt-3">Semi-Pro Footballer & Licensed Coach</p>
           <p className='p-text p-4 text-center text-black'>Play the game on a Semi -professional level and involved as a Head Coach both in Womens and Mens Games.</p>
-          <p className='p-text p-4 text-center text-black'>At the moment I am involved as a Lead Coach and Supervisor at MSI (Montgomery Soccer Inc) working with young players and trying to improve coaches in the organization</p>
+          <p className='p-text p-4 text-center text-black'>At the moment I am involved as a Lead Coach and Supervisor at MSI (Montgomery Soccer Inc) working with young players and trying to improve coaches in the organization.</p>
         </div>
         <div className=''>
           <img src={images.aboutme} alt='me' className='h-96 ml:h-[450px] lg:h-1/2 object-contain' />
