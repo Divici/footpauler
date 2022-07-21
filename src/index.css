@@ -12,6 +12,10 @@
         @apply flex-1 w-full flex-col pt-16 px-4 pb-8 sm:py-16 px-8
     }
 
+    .app__container {
+        @apply w-full min-h-screen flex flex-row
+    }
+
     .copyright {
         @apply w-full pt-8 flex flex-col justify-end items-end
     }
@@ -21,7 +25,11 @@
     }
 
     .head-text {
-        @apply text-[2rem] sm:text-[2.75rem] font-extrabold text-center text-black capitalize
+        @apply text-[1rem] sm:text-[1.75rem] md:text-[2rem] ml:text-4xl font-extrabold text-center text-black capitalize
+    }
+
+    .bold-text {
+        @apply text-sm sm:text-base font-extrabold text-black text-left
     }
 }
 

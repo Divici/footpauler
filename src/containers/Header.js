@@ -15,13 +15,13 @@ const scaleVariants = {
 };
 
 const Header = () => (
-  <div className="flex-1 w-full h-full flex-col lg:flex-row pt-44 px-4 pb-8 sm:pb-0 sm:px-8 app__flex">
+  <div className="flex-1 w-full h-full flex-col lg:flex-row pt-24 px-4 pb-8 sm:pb-0 sm:px-8 app__flex bg-gradient-to-t from-white via-primary to-white">
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.5 }}
-      className="flex-[0.65] flex flex-col justify-start items-start h-full mx-8"
+      className="flex-[0.65] flex flex-col justify-start items-start h-full mx-8 w-full mr-0 ml:mx-8"
     >
-      <div className="w-full flex justify-end items-end lg:justify-start lg:items-start flex-col">
+      <div className="w-full flex justify-start items-start lg:justify-end lg:items-end flex-col">
         <div className="py-4 px-8 bg-white rounded-2xl flex-row w-auto shadow-xl shadow-black/20 app__flex">
           <span className='text-secondary text-[2.5rem]'>👋</span>
           <div style={{ marginLeft: 20 }}>
@@ -54,7 +54,7 @@ const Header = () => (
     <motion.div
       variants={scaleVariants}
       whileInView={scaleVariants.whileInView}
-      className="flex-[0.75] flex w-full flex-row flex-wrap lg:flex-col justify-evenly items-start h-full lg:ml-4 ml-0"
+      className="flex-[0.75] flex w-full flex-row flex-wrap lg:flex-col justify-evenly items-start h-full ml:ml-4 ml-0"
     >
       {[images.ball1, images.player, images.ball2].map((circle, index) => (
         <div className="circle-cmp app__flex first:w-24 first:h-24 first:m-0 w-40 h-40 m-7 last:w-16 last:h-16 last:m-0 rounded-[50%] bg-white shadow-xl shadow-black/20" key={`circle-${index}`}>
@@ -65,4 +65,4 @@ const Header = () => (
   </div>
 );
 
-export default AppWrap(Header, 'home');
+export default AppWrap(Header, 'home', '');
